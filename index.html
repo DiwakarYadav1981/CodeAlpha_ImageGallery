@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📸 Image Gallery</h1>
+        <p class="subtitle">A responsive gallery with filters and lightbox view</p>
+    </header>
+
+    <div class="filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="city">City</button>
+        <button class="filter-btn" data-category="people">People</button>
+        <button class="filter-btn" data-category="animals">Animals</button>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+        <img src="" alt="" id="lightboxImg">
+        <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+        <div class="caption" id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
